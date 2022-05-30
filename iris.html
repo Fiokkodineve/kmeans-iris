@@ -3,11 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="iris.js"></script>
+    <script src="dataset.js"></script> <!-- Modificato da Luca Santamaria. E' importante importare il dataset sennò ci sarà una pagina vuota bianca (no stampa)-->
     <title>Iris</title>
+	<style>
+		.update{
+			background-color: #57FC04;
+			border-color: #0469FC;
+			color: #0469FC;
+			width: 200px; 
+			height: 100px; 
+			border-bottom-width: 10px;
+			border-left-width: 10px;
+			border-right-width: 10px;
+			border-top-width: 10px;
+			font-family: Tahoma;
+			font-size: 20px;
+	</style>
 </head>
 <body>
-    <canvas id="IrisCanvas" width="1000" height="600"></canvas>
-    <script src="kmeans.js"></script>
+    <canvas id="IrisCanvas" width="1000" height="600"></canvas> <!-- Creating a canvas to view the result-->
+    <script src="kmeans.js"></script> <!-- import the js file that includes the kmeans-->
+    <p id="commento"> </p>
+	<input type="button" class="update" value="AGGIORNA" onclick="history.go(0)"> 
 </body>
 </html>
